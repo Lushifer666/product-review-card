@@ -74,6 +74,8 @@ select {
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     background-color: hsl(30, 38%, 92%);
     display: flex;
     flex-direction: column;
@@ -84,15 +86,76 @@ body {
 
 .container{
     background-color: hsl(0, 0%, 100%);
-    height: 90vh;
+    height: 92vh;
     width: 51vh;
+    margin-top: 1.2em;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .mobileImg{
     border-radius: 10px 10px 0px 0px;
     
 }
+
+.desc {
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+h1 {
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+}
+
+h1, .actualPrice {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    }
+
+p {
+    margin: 1rem 0 1rem 0;
+    line-height: 1.5em;
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* margin-top: .9rem;
+    margin-bottom: .7rem; */
+   }
+
+.price {
+    margin: 1rem 0 1rem 0;
+}
+
+p, .cutoffPrice {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.actualPrice {
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.cutoffPrice {
+    text-decoration: line-through ;
+}
+
+.addToCart {
+    font-size: 14px;
+    align-items: center;
+    position:relative;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 3% 22% 3% 22%;
+    margin: 0 6% 0 6%
+}
+
+svg {
+    margin-right: 6%;
+}
+
