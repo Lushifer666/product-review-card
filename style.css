@@ -73,6 +73,7 @@ select {
   }
 }
 
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -90,7 +91,7 @@ body {
     width: 90%;
     max-width: 375px;
     max-height: 667px;
-    margin-top: 1.2em;
+    margin-top: 1rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -98,40 +99,46 @@ body {
 
 .mobileImg{
     border-radius: 10px 10px 0px 0px;
+    max-width: fit-content;
+}
+
+.desktopImg{
+  position: absolute;
+  visibility: hidden;
 }
 
 .desc {
-    margin: 0 1.5em 0 1.5em;
+    margin: 0 1.5rem 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    position: relative;
 }
 
 h1 {
-    line-height: 1em;
+    line-height: 1rem;
     color: hsl(212, 21%, 14%);
-    max-width: 375px;
+    font-size: 1.9rem;
+    line-height: 1.9rem;
 }
 
 h1, .actualPrice {
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 1.9em;
     }
 
 p {
-    margin: 6.5% 0 4% 0;
-    line-height: 1.7em;
+    margin: 0.8rem 0 0.7rem 0;
+    line-height: 1.5rem;
 }
 
 .perfume {
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin: 5% 0 5% 0;
    }
 
 .price {
-    margin: .5em 0 .5em 0;
+    margin: .4rem 0 .4rem 0;
     display: flex;
     align-items: center;
 }
@@ -142,13 +149,13 @@ p, .cutoffPrice {
 }
 
 .actualPrice {
-    font-size: 2em;
     color: hsl(158, 36%, 37%);
+    font-size: 2rem;
 }
 
 .cutoffPrice {
     text-decoration: line-through ;
-    margin-left: 6%;
+    margin-left: 1rem;
 }
 
 .addToCart {
@@ -158,11 +165,42 @@ p, .cutoffPrice {
     color: hsl(0, 0%, 100%);
     border: none;
     border-radius: 8px;
-    padding: 4.5% 24% 4.5% 24%;
+    margin: .5rem 0 .5rem 0;
+    padding: .7rem 2rem .7rem 2rem;
     display: flex;
     justify-content: center;
 }
 
 svg {
-    margin-right: 6%;
+    margin-right: 0.7rem;
+}
+
+.addToCart:active {
+  background-color: hsl(159, 47%, 17%);
+}
+
+@media screen and (min-width: 1440px) {
+  .mobileImg{
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .desktopImg{
+    position: relative;
+    visibility: visible;
+    border-radius: 10px 0 0 10px;
+    height: 550px;
+  }
+
+  .container{
+    background-color: hsl(0, 0%, 100%);
+    height: 550px;
+    width: 700px;
+    max-height: 600px;
+    max-width: 1000px;
+    border-radius: 10px;
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+    
+}
 }
