@@ -189,13 +189,14 @@ svg {
     position: relative;
     visibility: visible;
     border-radius: 10px 0 0 10px;
-    height: 550px;
+    height: 410px;
   }
 
   .container{
     background-color: hsl(0, 0%, 100%);
-    height: 550px;
-    width: 700px;
+    height: 410px;
+    width: 36%;
+    margin: auto;
     max-height: 600px;
     max-width: 1000px;
     border-radius: 10px;
